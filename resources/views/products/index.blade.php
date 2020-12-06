@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Featured Product</h2>
+                        <h2>Öne Çıkan Ürünler</h2>
                     </div>
                     <div class="featured__controls">
                         <ul>
@@ -39,5 +39,11 @@
                 @endforeach
             </div>
         </div>
+<form action="{{route('product.export')}}" method="get">
+    @csrf
+    <button type="submit" class="btn btn-primary">İndir</button>
+</form>
     </section>
+
+
 @endsection

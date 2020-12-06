@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ExcelDownloadController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProjeController;
@@ -29,6 +30,7 @@ Route::get('/hakkimda',[HomeController::class, 'showMyAbout']);
 Route::get('/kullanicilar',[HomeController::class, 'showUsers']);
 Route::get('/urunler',[HomeController::class, 'showProducts']);
 Route::get('/satislar',[HomeController::class, 'showSales']);
+Route::get('/export-products',[ExcelDownloadController::class, 'downloadExcel'])->name('product.export');
 
 /*
  * Product İşlemleri
@@ -37,3 +39,15 @@ Route::get('/satislar',[HomeController::class, 'showSales']);
 //Route::get('/urun-ekle',[ProductController::class,'create'])->name('product.create');
 //Route::post('/save-product',[ProductController::class,'store'])->name('product.save');
 //Route::get('/show-product',[ProductController::class,'index'])->name('product.show');
+
+
+/* Slider işlemleri */
+Route::get('/show-sliders',[\App\Http\Controllers\SliderController::class, 'index'])->name('slider.index');
+Route::get('/delete-sliders/{id}',[\App\Http\Controllers\SliderController::class,'destroy'])
+    ->where(array('id' => '[0-9]+'))->name('destroy.slider');
+
+Route::post('/import-categories',[\App\Http\Controllers\CategoryController::class, 'import'])
+    ->name('category.import');
+
+Route::get('/upload-categories',[\App\Http\Controllers\CategoryController::class,'upload'])
+    ->name('category.upload');

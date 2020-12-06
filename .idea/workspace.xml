@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce5dc0ca-ce53-4e36-a5a1-080ad51366e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/category/import.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/sliders/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -177,17 +176,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Antep-Vedat" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\kadir\www\antep-kadir\public" />
-      <recent name="C:\Users\kadir\www\antep-kadir\app\Models" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kadir\www\antep-kadir\resources\views\layouts" />
       <recent name="C:\Users\kadir\www\antep-kadir\resources\views" />
       <recent name="C:\Users\kadir\www\antep-kadir\resources\views\products" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kadir\www\antep-kadir\public" />
+      <recent name="C:\Users\kadir\www\antep-kadir\app\Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -212,7 +212,7 @@
       <workItem from="1607151422360" duration="8242000" />
       <workItem from="1607161328770" duration="6139000" />
       <workItem from="1607184268889" duration="7259000" />
-      <workItem from="1607231412442" duration="4049000" />
+      <workItem from="1607231412442" duration="17739000" />
     </task>
     <servers />
   </component>
@@ -240,6 +240,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="520" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1607157817629" />
+    <state x="1309" y="203" key="#com.intellij.ide.util.MemberChooser" timestamp="1607253111414">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1309" y="203" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607253111414" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1606641939352">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -256,6 +260,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="528" y="135" key="NewPhpClassDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1606641898601" />
+    <state x="1339" y="497" key="NewPhpFileDialog" timestamp="1607253920086">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1339" y="497" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607253920086" />
     <state x="-1143" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606751458070">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
