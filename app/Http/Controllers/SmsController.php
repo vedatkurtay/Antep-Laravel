@@ -22,9 +22,8 @@ class SmsController extends Controller
         $sifre = Str::random(8);
         $hash = Hash::make($sifre);
         if (User::where('phone', '=', $phone)->count() > 0 ) {
-            $kayit = User::find(1);
-            $kayit->password = $hash;
-            $kayit->save();
+            User::where('phone', $phone)->update(['password' => $hash]);
+
 
             /* $ch = curl_init('https://textbelt.com/text');
              $data = array(
@@ -50,7 +49,7 @@ class SmsController extends Controller
             $message = $response->current();
 
             if ($message->getStatus() == 0) {
-                echo "Sifre basariyla gonderilmistir.\n";
+                return redirect()->route('sms.index')->with('success', 'Sifreniz basariyla sifirlandi!');
 
             } else {
                 echo "The message failed with status: " . $message->getStatus() . "\n";

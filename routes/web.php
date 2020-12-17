@@ -55,6 +55,6 @@ Route::get('/upload-categories',[\App\Http\Controllers\CategoryController::class
 Route::get('/paginate', [ProductController::class,'index']);
 
 /* SMS */
-Route::get('/login', [\App\Http\Controllers\SmsController::class, 'index']);
+Route::get('/login', [\App\Http\Controllers\SmsController::class, 'index'])->name('sms.index');
 Route::get('/forgot', [\App\Http\Controllers\SmsController::class, 'forgot'])->name('forgot.page');
 Route::post('/reset', [\App\Http\Controllers\SmsController::class, 'Reset'])->name('reset.password');
