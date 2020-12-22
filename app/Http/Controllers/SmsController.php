@@ -39,7 +39,7 @@ class SmsController extends Controller
              $response = curl_exec($ch);
              curl_close($ch); */
 
-            $basic = new \Vonage\Client\Credentials\Basic('085fb36e','4t5THwkj89t2fsTy');
+            $basic = new \Vonage\Client\Credentials\Basic('APIKEY','API_SECRET');
             $client = new \Vonage\Client($basic);
 
             $response = $client->sms()->send(
